@@ -14424,16 +14424,22 @@ internalField   nonuniform List<vector>
 
 boundaryField
 {
-    movingWall
+    topLid
     {
         type            fixedValue;
         value           uniform (0 0 0);
     }
-    fixedWalls
+    bottomWall
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }    
+    sideWalls
     {
         type            fixedValue;
         value           uniform (0 0 0);
     }
+
     frontAndBack
     {
         type            empty;

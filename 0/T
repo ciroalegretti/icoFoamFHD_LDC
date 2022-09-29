@@ -19,15 +19,19 @@ internalField   uniform 300;
 
 boundaryField
 {
-    movingWall
+    topLid
     {
         type            fixedValue;
         value		uniform 600;
     }
-    fixedWalls
+    bottomWall
     {
-        type            fixedValue;
-        value		uniform 300;
+    	type 		fixedValue;
+    	value 		uniform 300;
+    }    
+    sideWalls
+    {
+        type            zeroGradient;
     }
 
     frontAndBack

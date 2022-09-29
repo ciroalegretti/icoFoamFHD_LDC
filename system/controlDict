@@ -52,8 +52,6 @@ functions
     #includeFunc residuals(U)
     #includeFunc residuals(T)
     #includeFunc residuals(M)    
-    #includeFunc vorticity  
-    #includeFunc streamfunction
     
     #includeFunc streamlinesLine(funcName=streamlines, start=(0 1 0), end=(0 0 0), nPoints=24, U)
 }

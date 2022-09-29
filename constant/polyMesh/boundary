@@ -14,21 +14,28 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-3
+4
 (
-    movingWall
+    topLid
     {
         type            wall;
         inGroups        List<word> 1(wall);
         nFaces          120;
         startFace       28560;
     }
-    fixedWalls
+    bottomWall
     {
         type            wall;
         inGroups        List<word> 1(wall);
-        nFaces          360;
+        nFaces          120;
         startFace       28680;
+    }
+    sideWalls
+    {
+        type            wall;
+        inGroups        List<word> 1(wall);
+        nFaces          240;
+        startFace       28800;
     }
     frontAndBack
     {
